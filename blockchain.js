@@ -14,7 +14,8 @@ class Blockchain {
     }
 
     generateHash(block) {
-        
+        const hash = sha256(block.key)
+        return hash
     }
 }
 
